@@ -1,0 +1,41 @@
+.profile {
+  width: 300px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgb(245, 244, 243);
+  border-radius: 8px;
+  box-shadow: rgba(34, 60, 80, 0.2) 3px 3px 6px 0px inset,
+    rgba(34, 60, 80, 0.2) -3px -3px 6px 1px inset;
+}
+
+.description img {
+  border-radius: 50%;
+}
+
+.description {
+  text-align: center;
+  color: grey;
+}
+
+.name {
+  font-size: larger;
+  font-weight: 700;
+  color: black;
+  padding: 10px 0;
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  background-color: rgb(232, 231, 231);
+}
+
+.stats li {
+  width: 33.33%;
+  text-align: center;
+  padding: 5px;
+}
+
+.label {
+  display: block;
+}

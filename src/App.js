@@ -1,6 +1,8 @@
 import user from './components/profile/user.json';
-import Profile from './components/profile/Profile';
 import './App.css';
+
+import Profile from './components/profile/Profile';
+import './components/profile/profile.css';
 
 function App() {
   return (
