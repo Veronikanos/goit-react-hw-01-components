@@ -1,4 +1,12 @@
 import PropTypes from 'prop-types';
+import {
+  ProfileCard,
+  DescriptionCard,
+  NameUserCard,
+  StatsList,
+  StatsListItem,
+  LabelCard,
+} from './Profile.styled';
 
 export default function Profile({
   avatar,
@@ -8,29 +16,29 @@ export default function Profile({
   stats,
 }) {
   return (
-    <div className="profile">
-      <div className="description">
+    <ProfileCard>
+      <DescriptionCard>
         <img src={avatar} alt="User avatar" className="avatar" />
-        <p className="name">{username}</p>
+        <NameUserCard>{username}</NameUserCard>
         <p className="tag">@{tag}</p>
         <p className="location">{location}</p>
-      </div>
+      </DescriptionCard>
 
-      <ul className="stats">
-        <li>
-          <span className="label">Followers</span>
+      <StatsList>
+        <StatsListItem>
+          <LabelCard>Followers</LabelCard>
           <span className="quantity">{stats.followers}</span>
-        </li>
-        <li>
-          <span className="label">Views</span>
+        </StatsListItem>
+        <StatsListItem>
+          <LabelCard>Views</LabelCard>
           <span className="quantity">{stats.views}</span>
-        </li>
-        <li>
-          <span className="label">Likes</span>
+        </StatsListItem>
+        <StatsListItem>
+          <LabelCard>Likes</LabelCard>
           <span className="quantity">{stats.likes}</span>
-        </li>
-      </ul>
-    </div>
+        </StatsListItem>
+      </StatsList>
+    </ProfileCard>
   );
 }
 

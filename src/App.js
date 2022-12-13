@@ -1,8 +1,7 @@
-import user from './components/data/user.json';
+import user from './data/user.json';
 import './App.css';
 
 import Profile from './components/Profile/Profile';
-import './components/Profile/profile.css';
 
 function App() {
   return (
