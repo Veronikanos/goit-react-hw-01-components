@@ -4,13 +4,13 @@ import {StatWrapper, StatList, StatItem} from './Statistics.styled';
 export default function Statistics({title, stats}) {
   return (
     <StatWrapper>
-      <h2 class="title">{title}</h2>
+      <h2>{title}</h2>
 
       <StatList>
         {stats.map((item) => (
           <StatItem key={item.id}>
-            <span class="label">{item.label}</span>
-            <span class="percentage">{item.percentage}%</span>
+            <span>{item.label}</span>
+            <span>{item.percentage}%</span>
           </StatItem>
         ))}
       </StatList>

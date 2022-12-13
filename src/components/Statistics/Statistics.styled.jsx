@@ -5,7 +5,6 @@ export const StatWrapper = styled.section`
   padding-top: 20px;
   width: fit-content;
   text-align: center;
-  background-color: rgb(245, 244, 243);
   border-radius: 8px;
   box-shadow: rgba(34, 60, 80, 0.2) 3px 3px 6px 0px inset,
     rgba(34, 60, 80, 0.2) -3px -3px 6px 1px inset;
