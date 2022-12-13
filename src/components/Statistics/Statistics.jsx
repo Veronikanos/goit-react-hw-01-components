@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import {StatWrapper, StatList, StatItem} from './Statistics.styled';
 
-export default function Statistics({title, stats}) {
+export const Statistics = ({title, stats}) => {
   return (
     <StatWrapper>
       <h2>{title}</h2>
@@ -16,7 +16,7 @@ export default function Statistics({title, stats}) {
       </StatList>
     </StatWrapper>
   );
-}
+};
 
 Statistics.propTypes = {
   title: PropTypes.string,

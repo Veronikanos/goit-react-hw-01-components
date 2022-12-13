@@ -8,13 +8,7 @@ import {
   LabelCard,
 } from './Profile.styled';
 
-export default function Profile({
-  avatar,
-  username,
-  tag,
-  location,
-  stats,
-}) {
+export const Profile = ({avatar, username, tag, location, stats}) => {
   return (
     <ProfileCard>
       <DescriptionCard>
@@ -40,7 +34,7 @@ export default function Profile({
       </StatsList>
     </ProfileCard>
   );
-}
+};
 
 Profile.propTypes = {
   avatar: PropTypes.string.isRequired,
