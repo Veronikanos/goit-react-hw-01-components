@@ -4,7 +4,7 @@ import {StatWrapper, StatList, StatItem} from './Statistics.styled';
 export const Statistics = ({title, stats}) => {
   return (
     <StatWrapper>
-      <h2>{title}</h2>
+      {title ? <h2>{title}</h2> : null}
 
       <StatList>
         {stats.map((item) => (
