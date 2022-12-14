@@ -13,14 +13,11 @@ export const FriendListItem = ({avatar, name, isOnline}) => {
       <OnlineStatus online={isOnline}>
         <GoPrimitiveDot size={30} />
       </OnlineStatus>
-      <UserAvatar src={avatar} alt={name} width="48" />
+      <UserAvatar src={avatar} alt={`${name} avatar`} width="48" />
       <UserName>{name}</UserName>
     </FriendListCard>
   );
 };
-
-//TODO & QUESTION: how to concat variable and string in JSX?
-//TODO: add icon component for status.
 
 FriendListItem.propTypes = {
   avatar: PropTypes.string.isRequired,

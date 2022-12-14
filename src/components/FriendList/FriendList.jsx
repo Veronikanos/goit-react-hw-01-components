@@ -19,6 +19,8 @@ export const FriendList = ({friends}) => {
 
 FriendList.propTypes = {
   friends: PropTypes.arrayOf(
-    PropTypes.shape() //TODO: have a look PropTypes to describe it in detailed
+    PropTypes.shape({
+      key: PropTypes.number.isRequired,
+    })
   ).isRequired,
 };
