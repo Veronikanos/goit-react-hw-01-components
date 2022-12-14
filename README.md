@@ -38,9 +38,15 @@ Created a component TransactionHistory that accepts one prop items (an array of 
 
 ---
 
-### Available Scripts
+### HOW TO RUN THIS PROJECT LOCALLY
+
+Clone this repo: `git clone https://veronikanos.github.io/goit-react-hw-01-components/`
 
 In the project directory, you can run:
+
+#### `npm install`
+
+then
 
 #### `npm start`
 
